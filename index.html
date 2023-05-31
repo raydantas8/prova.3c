@@ -1,42 +1,37 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt=br">
 <head>
+    <link rel = "stylesheet" href="estilo.css"/>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Massa</title>
+    <title>Document</title>
 </head>
 <body>
-    <div>login</hi>
+    <div>
+        <h1> login</h1>
         <form>
-            <input type="text" placeholder ="digite seu e-mail" id="e-mail">
-            <input type="password" placeholder ="digite sua senha" id=
-            "senha"> <br><br>
+            <input type="text" placeholder="seu email" id="e-mail">
+            <br><br>
+            <input type="password" placeholder="sua senha" id="senha">
+            <br><br>
             <input type="submit" onclick="logar(); return false">
-            
-       
-            <form>
-        </div>
-
+            <br><br>
+        </form>
+    </div>
     <script>
-    function logar(){
-        var login=document.getElementById('e-mail').value; 
-        var senha=document.getElementById('senha').value;
+        function logar(){
+            var login = document.getElementById('e-mail').value;
+            var senha = document.getElementById('senha').value;
+            if(login == "rayane" && senha == "123"){
+                alert('logado com sucesso')
+                location.href = "inicio.html";
 
-        if(login="aurelio" && senha=="boy"){
-            alert("login com sucesso");
-
-            window.location = "inicio.html";
-        
+            }
+            else{
+                alert('erro ao logar');
+            }
         }
-        else{
-            alert("Erro");
-        }
-    }
- 
     </script>
-
-        
-    </body>
-    </html>
+</body>
+</html>
